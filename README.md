@@ -101,6 +101,20 @@ Main folders and their purpose:
 ### Servers
 <img width="1314" height="647" alt="Servers Screenshot" src="https://github.com/user-attachments/assets/5acf766f-900c-4943-be37-3777af9a88a1" />
 
+### Flaws / Bugs with this project
+
+---
+
+- There’s no proper way to verify if the provided email address is legitimate.
+- No login rate limiting is implemented.
+- The website always defaults to the light theme (it’s supposed to be dark by default, but I couldn’t figure out why this bug occurs).
+- There may be database update or UI display issues in edge cases, such as when User A accepts a friend request at the same time User B rejects it.
+- When a user spams messages quickly, you may see mismatches between what the sender and receiver see, or sometimes the sender may see duplicate messages. This is either due to WebSocket not handling all messages properly, or a bug in how local messages are inserted (which is done to give the user an instant feedback feel).
+- When editing a multi-line message, all lines collapse into a single line (this could be fixed by using a textarea, but I haven’t implemented it yet).
+- The news feed page does not show actual news; instead, it just displays a list of old news stored on the server because I couldn’t find a suitable free API.
+- The Discover Servers page lacks a polished UI.
+- Uploaded media files are not properly structured or stored. For example, when a user uploads a profile picture, it is not stored separately, and if they upload another, the old one is not deleted. This results in improper media management.
+
 ## Contributing
 
 Pull requests are welcome (sorry in advance for my code if you want to contribute). For major changes, please open an issue to discuss what you’d like to change.
@@ -113,3 +127,4 @@ Pull requests are welcome (sorry in advance for my code if you want to contribut
 
 Created by [@calvintaw](https://github.com/calvintaw)  
 Feel free to reach out!
+
