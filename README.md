@@ -117,7 +117,10 @@ Main folders and their purpose:
 
 ## Contributing
 
-Pull requests are welcome (sorry in advance for my code if you want to contribute). For major changes, please open an issue to discuss what you’d like to change.
+Pull requests are welcome.  
+For major changes, please open an issue first to discuss what you’d like to change.  
+
+(Feedback is always appreciated!) :)
 
 ## License
 
@@ -127,4 +130,5 @@ Pull requests are welcome (sorry in advance for my code if you want to contribut
 
 Created by [@calvintaw](https://github.com/calvintaw)  
 Feel free to reach out!
+
 
